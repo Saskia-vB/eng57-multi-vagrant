@@ -108,3 +108,4 @@ another merging test
 recreate dev branch�
 merging attempt
 merging again
+checking
