@@ -41,7 +41,33 @@ rake spec
 ```
 
 
-## Jenkins
+# Jenkins
+
+## Create a CI pipeline
+ 1. Go to: http://18.130.21.164:8080/
+ 2. Log in
+ 3. Configure
+    - good practice: delete old builds
+    - GitHub project: link to your github repo [i.e. https://github.com/Saskia-vB/eng57-multi-vagrant/]
+    - Select Git as version control manager:
+        - Repository URL: enter github clone SSH key [i.e. git@github.com:Saskia-vB/eng57-multi-vagrant.git]
+        - Credentials: create a SSH Key - follow documentation : https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+    - select "Github hook trigger for GITScm poling"
+    - Build environments: select "add Node/npm to path"
+    - Build:
+    ```bash
+    cd app
+    npm install
+    npm test
+    ```
+  4. Create a Webhook on Github repo - go to repo > settings > webhooks > add webhook
+    - Payload URL: http://18.130.21.164:8080/github-webhook/
+    - Content type: application/json
+    - select "send me everything"
+    
+
+
+
 
 
 
@@ -64,3 +90,4 @@ remove blog test
 only dev branch
 still working
 testing jenkins pluugin
+master merge try
