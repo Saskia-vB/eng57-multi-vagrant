@@ -12,3 +12,4 @@ still trying
 master and dev branch
 will it work twice in a row?
 testing
+npm test
