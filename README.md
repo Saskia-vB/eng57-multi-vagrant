@@ -6,12 +6,6 @@ Vagrant is able to define and control multiple guest machines per Vagrantfile. T
 
 This exercise utilised vagrant and VirtualBox to make sure the provision file passed all the tests.
 
-#### Pre-requisites
-- Vagrant
-- Virtual box
-- ruby
-- bundler
-
 #### Installation
 
 ##### Pre-requisites:
