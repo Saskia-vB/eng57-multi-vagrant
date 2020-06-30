@@ -80,12 +80,6 @@ rake spec
 
 
 
-
-
-
-
-
-
 ###### Github testing for Jenkins build
 test I
 test from branch
