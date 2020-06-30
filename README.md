@@ -32,6 +32,19 @@ Now you can see nginx running on 2 locations:
 - ip: 192.168.10.100
 - development.local/
 
+To see the website working:
+1. cd eng57-multi-vagrant
+2. vagrant ssh app
+3. cd /home/ubuntu/app
+4. sudo npm install
+5. sudo npm start
+
+Now you can see the website running here:
+- development.local:3000
+- development.local:3000/fibonacci/{index}
+
+
+
 #### Tests
 
 ```bash
@@ -64,7 +77,7 @@ rake spec
     - Payload URL: http://18.130.21.164:8080/github-webhook/
     - Content type: application/json
     - select "send me everything"
-    
+
 
 
 
@@ -92,6 +105,6 @@ still working
 testing jenkins pluugin
 master merge try
 another merging test
-recreate dev branchÃ
+recreate dev branchï¿½
 merging attempt
 merging again
