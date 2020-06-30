@@ -63,3 +63,4 @@ npm test
 remove blog test
 only dev branch
 still working
+testing jenkins pluugin
