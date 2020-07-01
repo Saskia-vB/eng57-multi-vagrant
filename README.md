@@ -42,7 +42,6 @@ Now you can see the website running here:
 
 ```bash
 cd eng57-multi-vagrant/tests
-bundle install
 rake spec
 ```
 
@@ -76,7 +75,19 @@ rake spec
     - Content type: application/json
     - select "send me everything"
 
-
+## Using jenkins
+- Once your CI pipeline is configured here is how to build from a new branch:
+  1. create a new branch:
+     - in your command line, from the master branch enter: git checkout -b [branch_name]
+  2. configure Jenkins:
+    - go to configurations > branches to build > branch specifier
+    - enter your [branch_name]
+    - apply and save changes
+  3. push from command line:
+    - make changes i.e. echo "test" >> README.md or touch README2.md
+    - git add .
+    - git commit -m "meaningful message"
+    - git push origin [branch_name]
 
 ###### Github testing for Jenkins build
 test I
