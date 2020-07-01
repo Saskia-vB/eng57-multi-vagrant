@@ -66,11 +66,9 @@ rake spec
     npm test
     ```
   4. Create a Webhook on Github repo - go to repo > settings > webhooks > add webhook
-    - Payload URL: http://35.178.239.152:8080/github-webhook/ 
+    - Payload URL: http://35.178.239.152:8080/github-webhook/
     - Content type: application/json
     - select "send me everything"
-
-
 
 
 
