@@ -47,6 +47,12 @@ rake spec
 ```
 
 # Jenkins
+### What is Jenkins?
+- Continuous Integration (CI) Server:
+  - CI focuses on preparing software release easier, changes are merged back to main branch as often as possible
+- Monitors repeated tasks
+- build and test your project continuously
+
 
 ## Create a CI pipeline
  1. Go to: http://35.178.239.152:8080/
