@@ -6,12 +6,6 @@ Vagrant is able to define and control multiple guest machines per Vagrantfile. T
 
 This exercise utilised vagrant and VirtualBox to make sure the provision file passed all the tests.
 
-#### Pre-requisites
-- Vagrant
-- Virtual box
-- ruby
-- bundler
-
 #### Installation
 
 ##### Pre-requisites:
@@ -44,20 +38,18 @@ Now you can see the website running here:
 - development.local:3000/fibonacci/{index}
 
 
-
 #### Tests
 
 ```bash
-cd starter-code/tests
+cd eng57-multi-vagrant/tests
 bundle install
 rake spec
 ```
 
-
 # Jenkins
 
 ## Create a CI pipeline
- 1. Go to: http://18.130.21.164:8080/
+ 1. Go to: http://35.178.239.152:8080/
  2. Log in
  3. Configure
     - good practice: delete old builds
@@ -74,13 +66,9 @@ rake spec
     npm test
     ```
   4. Create a Webhook on Github repo - go to repo > settings > webhooks > add webhook
-    - Payload URL: http://18.130.21.164:8080/github-webhook/
+    - Payload URL: http://35.178.239.152:8080/github-webhook/ 
     - Content type: application/json
     - select "send me everything"
-
-
-
-
 
 
 
